@@ -34,8 +34,6 @@ public class DataSaver {
             }
             while (cont); // while continue is true, keep going through the loop
 
-            System.out.println(records);
-
             // ----- PROMPT FOR FILE TO WRITE TO -----
             Path target = new File(System.getProperty("user.dir")).toPath(); // look through user directory
             String path = SafeInput.getNonZeroLenString(scan,"What is the name of the file you want to write to? [Give the name of the file you want to create if not already made] ");
